@@ -1,0 +1,696 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #131413;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#page1 img {
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    opacity: .9;
+}
+
+nav {
+    z-index: 111;
+    height: 120px;
+    width: 100%;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+}
+
+.nL {
+    height: 1.9vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 2.1vw;
+    /* width: 14vw; */
+}
+
+.nL svg {
+    scale: 1.3;
+    left: 6%;
+    position: fixed;
+}
+
+.nR button {    
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 40px;
+    color: #fff;
+    border: none;
+}
+
+.nR button span:nth-child(1){
+    position: absolute;
+    transform-origin: 50%;
+    top: 25%;
+}
+
+.nR button span:nth-child(2){
+    transform-origin: 50%;
+    position: absolute;
+    top: 35%;
+}
+
+.nR button:hover{
+    cursor: pointer;
+}
+
+.lineOne {
+    color: #fff;
+    position: absolute;
+    font-size: 6vw;
+    font-weight: 400;
+    opacity: .7;
+    font-family: "gilroy";
+    transform: translateY(-80%);
+}
+
+.lineTwo {
+    color: #fff;
+    font-size: 6vw;
+    opacity: .7;
+    font-weight: 400;
+    font-family: "gilroy";
+    position: absolute;
+}
+
+.lineThree {
+    font-size: 6vw;
+    font-weight: 400;
+    opacity: .7;
+    color: #fff;
+    position: absolute;
+    transform: translateY(80%);
+}
+
+#page1 p {
+    z-index: 2;
+    font-family: "gilroy";
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 6vw;
+    position: relative;
+    top: 25%;
+    opacity: .7;
+    text-align: center;
+}
+
+#page2 {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    background-color: #131413;
+}
+
+.page2Left{
+    width: 40vw;
+    height: 90vh;
+    position: absolute;
+    left: 7%;
+    overflow: hidden;
+    top: 10%;
+}
+
+.page2Left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale : 1.4
+}   
+
+.page2Right{
+    width: 40vw;
+    height: 75vh;
+    position: absolute;
+    right: 7%;
+    top: 33%;
+    padding-left: 3vw;
+    color: grey;
+}
+
+.char{
+    font-size: 2.3vw;
+    font-family: "gilroy";
+    letter-spacing: -1px;
+}
+
+.button{
+    display: flex;
+    margin-top: 3vw;
+    color: #fff;
+    height: 3vw;
+    gap: 1vw;
+    border-radius: 50px;
+    background-color: #272826;
+    width: 19vw;
+}
+
+.arrow{
+    margin:auto;
+    width: 1.5vw;
+    height: 1.5vw;  
+    scale : .4;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow i{
+    opacity : 0;
+    scale : .4;
+}
+
+.txt{
+    height : 1.2vw ;
+    margin: auto;
+    display: flex;
+    font-family: "gilroy";
+    overflow: hidden;
+    width: 13.1vw;
+    flex-direction: column;
+    position: relative;
+}
+
+.yep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.yup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt h3{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    cursor : pointer;
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #131413;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+}
+
+.page3Image{
+    height: 50%;
+    width: 20%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 45vw;
+}
+
+.page3Image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale : 1.3;
+}
+
+.page31{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #131413;
+}
+
+.page32{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #131413;
+}
+
+.page32Wrapper{
+    height: 60%;
+    width: 60%;
+    overflow: hidden;
+}
+
+.page32Row{
+    height: 20%;
+    display: flex;
+}
+
+.image1 ,.image2,.image3{
+    position: relative;
+}
+
+.image2{
+    width: 60% ;
+    
+    margin: .5vw;
+    overflow: hidden;
+}
+
+.image1{
+    width: 20%;
+    overflow: hidden;
+}
+
+.image3{
+    width: 20%;
+    overflow: hidden;
+}
+
+.p32Video{
+    width: 60%;
+    height: 100%;    
+}
+
+.p32Video video{
+    height: 100%;
+    margin: 0 7%;
+}
+
+.cornerImg{
+    width: 20%;
+    margin: .5vw;
+    overflow: hidden;
+}
+
+.cornerImg img{
+    object-fit: cover;
+}
+
+.p32Row2{
+    height: 60%;
+}
+
+#page4{
+    height: 100vh;
+    width: 100vw;
+    background-color: #131413;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page4Para{
+    font-family:"gilroy";
+    letter-spacing: 1px;
+}
+
+.p4Hlines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5vw;
+}
+
+.p4HLine1{
+    font-family: "gilroy";
+    font-weight: 400;
+    padding-right: 15vw;
+    height: 7vw;
+}
+
+.p4HLine2{
+    padding-left: 15vw;
+    height: 7vw;
+}
+
+.p4HLine2 h1{
+    font-weight: 300;
+}
+
+.page4Heading{
+    margin-top: 5vw;
+}
+
+.page4Button{
+    scale : .7;
+    opacity: 0;
+    height: 3vw;
+    background-color: #272826;
+    border-radius: 50px;
+    margin: 5vw;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.p4BTxt{
+    height: 3vh;
+    overflow: hidden;
+    width: 7vw;
+}
+
+.p4TLine1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .1vw;
+}
+
+.p4TLine1 h3{
+    font-family: "gilroy";
+    letter-spacing: 3px;
+    font-size: 1vw;
+}
+
+.p4TLine2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p4TLine2 h3{
+    font-family: "gilroy";
+    letter-spacing: 3px;
+    font-size: 1vw;
+}
+
+.p4Arrow{
+    background-color: rebeccapurple;
+    height: 1.5vw;
+    width: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    scale : .4
+}
+
+.p4Arrow i{
+    scale :0; 
+}
+
+.vowel , .cons{
+    opacity: 0;
+}
+
+.page4Button:hover{
+    cursor:pointer;
+}
+
+#loader{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8E2ADA;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+}
+
+#loader img{
+    position: absolute;
+    opacity: 0;
+}
+
+#navContent{
+    position: fixed;
+    background-color: #8E2ADA;
+    z-index: 11;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.nCleft{
+    margin: 9vw 0 0 8vw;
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start ;   
+    flex-direction: column;
+}
+
+.childContainer{
+    height: 4.5vw;
+    overflow: hidden;
+}
+
+.navChild1{
+    font-size: 4.5vw;
+    font-family: "gilroy";
+    opacity : 0.3;
+    font-weight: 400;
+    transform: translateY(100%);
+    color: #fff;
+}
+
+.navChild2{
+    color: #000;
+    font-family: serif;
+    font-size: 4.5vw;
+    font-weight: 400;
+}
+
+.navChild h1:hover{
+    cursor: pointer;
+}
+
+.nCright{
+    margin: 14vw 22vw 0 0;
+    height: 50%;
+    width: 15%;
+    transform: translateY(50%);
+    opacity: 0;
+    color: #fff;
+    display: flex   ;
+    font-family: "gilroy";
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.nCright h3{
+    font-size: 1vw;
+}
+
+.nCright p:hover{
+    cursor : pointer;   
+}
+
+.contact{
+    gap: .5vw;
+    display: flex   ;
+    flex-direction: column;
+}
+
+.contact p{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+    height: 1vw;
+}
+
+.num{
+    width: 9.5vw;
+    overflow: hidden;
+}
+
+.num .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+}
+
+.mail{
+    width:11vw ;
+    overflow: hidden;
+}
+
+.mail .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+}
+
+.connect{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .5vw;
+    flex-direction: column;
+}
+
+.linkedIn{
+    width:5.2vw ;
+    overflow: hidden;
+}
+
+.linkedIn .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+}
+
+.insta{
+    width:6.4vw ;
+    overflow: hidden;
+}
+
+.insta .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+
+}
+
+.fb{
+    width:6vw ;
+    overflow: hidden;
+}
+
+.fb .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+}
+
+.x{
+    width:1vw ;
+    overflow: hidden;
+}
+
+.x .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+}
+
+.vimeo{
+    width:3.2vw ;
+    overflow: hidden;
+}
+
+.vimeo .underline{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: -100%;
+    background-color: #fff;
+}
+
+#page5{
+    background-color: #131413;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page5Stripes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    height: 17%;
+    text-transform: uppercase;
+    border-top: 1px dotted gray;
+}
+
+.page5Stripes:nth-last-child(1){
+    height: 22% ;
+    border-bottom: 1px dotted gray;
+}
+
+.sL h3{
+    margin-left: 1vw;
+    font-weight: 100;
+    font-family: "gilroy";
+    font-size: .9vw;
+}
+
+.sC{
+    width: 50%;
+    margin-right:10vw ;
+}
+
+.sC h1{
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.sR{
+    display: flex;
+    font-size: .8vw;
+    gap: 1vw;
+    width: 15%;
+}
+
+.sRType{
+    padding: 0.5vw;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
